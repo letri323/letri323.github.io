@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="Surcss.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1 id="title">Iron Man Surver Form</h1>
+<p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+<div id="body">
+<form id="survey-form">
+<label id="name-label" for="name">	
+<div>Name:</div>
+</label>
+<input id="name" placeholder="Enter your name" type="text" required>
+
+<label id="email-label" for="email">	
+<div>Email:</div>
+</label>
+<input id="email" placeholder="Enter your Email" type="text" required>
+
+<label id="number-label" for="number">	
+<div>Age:</div>
+</label>
+<input id="number" placeholder="Enter your Age" type="number" min="10" max="55" required>
+
+<div >What is the most beautiful armor of iron man?</div>
+<select id="dropdown">
+	<option value="default">Choose an option</option>
+	<option value="Mark V">Mark V</option>
+	<option value="Hulkbuster">Hulkbuster</option>
+	<option value="MARK LXXXV">MARK LXXXV</option>
+	<option value="MARK XLV">MARK XLV</option>
+</select>
+
+<div id="text1">Which Iron-Man Movie Do You Like The Most?</div>
+<input type="radio" name="Movie" value="1">Iron Man</input>
+<br>
+<input type="radio" name="Movie" value="2">Iron Man2</input>
+<br>
+<input type="radio" name="Movie" value="3">Iron Man3</input>
+<br>
+<input type="radio" name="Movie" value="4">Avengers</input>
+<br>
+<input type="radio" name="Movie" value="5">Avengers: Infinitiy War</input>
+<br>
+<input type="radio" name="Movie" value="6">Avengers: Endgame</input>
+<br>
+<br>
+<div id="text1">Which Of The Other Avenger Do You Like?</div>
+
+<input type="checkbox" name="Avengers" value="1">Black Widow</input>
+<br>
+<input type="checkbox" name="Avengers" value="2">Thor</input>
+<br>
+<input type="checkbox" name="Avengers" value="3">Hulk</input>
+<br>
+<input type="checkbox" name="Avengers" value="4">Captain America</input>
+<br>
+<input type="checkbox" name="Avengers" value="5">Hawkeye</input>
+<br>
+<br>
+<div>Any comments or suggestions?</div>
+<textarea id="comments" placeholder="Add Your Comments Here..." rows="5" cols="20"></textarea>
+<br>
+<input  id="submit" type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
