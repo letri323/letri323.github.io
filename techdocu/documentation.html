@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Python Documentation</title>
+	<link rel="stylesheet" type="text/css" href="doc.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<nav id="navbar">
+		<header>Python Docmentation</header>
+		<ul>
+			<li><a class="nav-link" href="#Python_Introduction">Python Introduction</a></li>
+			<li><a class="nav-link" href="#Python_Variables">Python Variables</a></li>
+			<li><a class="nav-link" href="#Python_Data_Types">Python Data Types</a></li>
+			<li><a class="nav-link" href="#Python_Lists">Python Lists</a></li>
+			<li><a class="nav-link" href="#Python_If_..._Else">Python If ... Else</a></li>
+			<li><a class="nav-link" href="#Python_While_Loops">Python While Loops</a></li>
+			<li><a class="nav-link" href="#Python_For_Loops">Python For Loops</a></li>
+			<li><a class="nav-link" href="#Python_Functions">Python Functions</a></li>
+			<li><a class="nav-link" href="#Reference">Reference</a></li>
+		</ul>
+	</nav>
+	<main id="main-doc">
+		<section class="main-section" id="Python_Introduction">
+			<header>Python Introduction</header>
+			<article>
+				<h3>What is Python?</h3>
+				<p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+				<div>It is used for:</div>
+				<ul>
+					<li>web development (server-side),</li>
+					<li>software development,</li>
+					<li>mathematics,</li>
+					<li>system scripting.</li>
+				</ul>
+				<h3>What can Python do?</h3>
+				<ul>
+					<li>Python can be used on a server to create web applications.</li>
+					<li>Python can be used alongside software to create workflows.</li>
+					<li>Python can connect to database systems. It can also read and modify files.</li>
+					<li>Python can be used to handle big data and perform complex mathematics.</li>
+					<li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+				</ul>
+				<h3>Why Python?</h3>
+				<ul>
+					<li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+					<li>Python has a simple syntax similar to the English language.</li>
+					<li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+					<li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+					<li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+				</ul>
+
+			</article>
+		</section>
+		<section class="main-section" id="Python_Variables">
+			<header>Python Variables</header>
+			<article>
+				<h3>Creating Variables</h3>
+				<p>Variables are containers for storing data values.</p>
+				<p>Unlike other programming languages, Python has no command for declaring a variable.</p>
+				<p>A variable is created the moment you first assign a value to it.</p>
+				
+				<h4>Example</h4>
+				<code>
+			x = 5
+			y = "jonh"
+			print(x)
+			print(y)
+				</code>
+
+				<h3>Variable Names</h3>
+				<p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:</p>
+				<ul>
+					<li>A variable name must start with a letter or the underscore character</li>
+					<li>A variable name cannot start with a number</li>
+					<li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+					<li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+				</ul>
+				<h4>Example</h4>
+					<code>
+			<i>#Legal variable names:</i>
+			myvar = "John"
+			my_var = "John"
+			_my_var = "John"
+			myVar = "John"
+			MYVAR = "John"
+			myvar2 = "John"
+			<i>#Illegal variable names:</i>
+			2myvar = "John"
+			my-var = "John"
+			my var = "John"
+					</code>
+			</article>
+		</section>
+		<section class="main-section" id="Python_Data_Types">
+			<header>Python Data Types</header>
+			<article>
+				<h3>Built-in Data Types</h3>
+				<p>In programming, data type is an important concept.</p>
+				<p>Variables can store data of different types, and different types can do different things.</p>
+				<p>Python has the following data types built-in by default, in these categories:</p>
+				<div>Text Type:</div>
+				<code>	str</code>
+				<div>Numeric Types:</div>
+				<code>	int, float, complex</code>
+				<div>Mapping Type:</div>
+				<code>	dict</code>
+				<div>Set Types:</div>
+				<code>	set, frozenset</code>
+				<div>Boolean Type:</div>
+				<code>	bool</code>
+				<div>Binary Types:</div>
+				<code>	bytes, bytearry, memoryview</code>
+			</article>
+		</section>
+		<section class="main-section" id="Python_Lists">
+			<header>Python Lists</header>
+			<article>
+				<h3>Python Collections (Arrays)</h3>
+				<p>There are four collection data types in the Python programming language:</p>
+				<ul>
+					<li><b>List</b> is a collection which is ordered and changeable. Allows duplicate members.</li>
+					<li><b>Tuple</b> is a collection which is ordered and unchangeable. Allows duplicate members.</li>
+					<li><b>Set</b>is a collection which is unordered and unindexed. No duplicate members.</li>
+					<li><b>Dictionary</b>is a collection which is unordered, changeable and indexed. No duplicate members.</li>
+					<p>When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.</p>
+				</ul>
+				<h3>List</h3>
+				<p>A list is a collection which is ordered and changeable. In Python lists are written with square brackets.</p>
+				<h4>Example</h4>
+				<p>Creat a List:</p>
+				<code>
+			thislist = ["apple", "banana","cherry"]
+			print(thislist)
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="Python_If_..._Else">
+			<header>Python If ... Else</header>
+			<article>
+				<h3>Python Conditions and If statements</h3>
+				<p>Python supports the usual logical conditions from mathematics:</p>
+
+				<code>
+			* Equals: a==b
+			* Not Equals: a != b
+			* Less than: a < b
+			* Less than or equal to: a <= b
+			* Greater than: a > b</li>
+			* Greater than or equal to: a >= b
+				</code>
+				<p>These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
+				<p>An "if statement" is written by using the if keyword.</p>
+				<h4>Example</h4>
+				<p>If statement</p>
+				<code>
+			a = 23
+			b = 200
+			if b >a:
+				print("b is greater than a")
+				</code>
+				<p>In this example we use two variables, <b>a</b> and <b>b</b>, which are used as part of the if statement to test whether <b>b</b> is greater than <b>a</b>. As <b>a</b> is <b>33</b>, and <b>b</b> is <b>200</b>, we know that <b>200</b> is greater than <b>33</b>, and so we print to screen that "b is greater than a".</p>
+			</article>
+		</section>
+		<section class="main-section" id="Python_While_Loops">
+			<header>Python While Loops</header>
+			<article>
+				<h3>Python Loops</h3>
+				<p>Python has two primitive loop commands</p>
+				<ul>
+					<li><b>while</b> loops</li>
+					<li><b>for</b> loops</li>
+				</ul>
+				<h3>The while Loop</h3>
+				<p>With the <b>while</b> loop we can execute a set of statements as long as a condition is true.</p>
+				<h4>Example</h4>
+				<p>Print i as long as i is less than 6:</p>
+				<code>
+			i = 1
+			while i < 6:
+				print(i)
+				i += 1
+				</code>
+				<p>The <b>while</b> loop requires relevant variables to be ready, in this example we need to define an indexing variable,<b> i</b>, which we set to 1.</p>
+			</article>
+		</section>
+		<section class="main-section" id="Python_For_Loops">
+			<header>Python For Loops</header>
+			<article>
+				<h3>Python For Loops</h3>
+				<p>A <b>for</b> loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
+				<p>This is less like the <b>for</b> keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</p>
+				<p>With the <b>for</b> loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+				<h4>Example</h4>
+				<p>Print each fruit in a fruit list:</p>
+				<code>
+			fruits = ["apple", "banana","cherry"]
+			for x in fruits:
+				print(x)
+				</code>
+				<p>The <b>for</b> loop does not require an indexing variable to se beforehand.</p>
+			</article>
+		</section>
+		<section class="main-section" id="Python_Functions">
+			<header>Python Functions</header>
+			<article>
+				<p>A function is a block of code which only runs when it is called.</p>
+				<p>You can pass data, known as parameters, into a function.</p>
+				<p>A function can return data as a result.</p>
+				<h3>Creating a Funcction</h3>
+				<p>In Python a function is defined using the <b>def</b> keyword:</p>
+				<h4>Example</h4>
+				<code>
+			def my_function():
+				print("Hello from a function")
+				</code>
+				<h3>Calling a Funcction</h3>
+				<p>To call a function, use the function name followed by parenthesis:</p>
+				<h4>Example</h4>
+				<code>
+			
+			def my_function():			
+				print("Hello from a function"
+	
+			my_function()
+				</code>
+				<h3>Arguments</h3>
+				<p>Information can be passed into functions as arguments.</p>
+				<p>Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.</p>
+				<p>The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:</p>
+				<h4>Example</h4>
+				<code>
+			def my_function(fname):
+				print(fname + " Refsnes")
+
+			my_function("Emil")
+			my_function("Tobias")
+			my_function(Linus)
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="Reference">
+			<header>Reference</header>
+			<article>
+				<li>All the documentation in this page is taken from <a href="https://www.w3schools.com/python/default.asp" target="_blank">We3school</a></li>
+			</article>
+		</section>
+	</main>
+</body>
+</html>
