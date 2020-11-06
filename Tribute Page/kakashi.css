@@ -1,0 +1,36 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+}
+
+#title{
+	text-align: center;
+	font-size: 45px;
+	padding: 10px;
+}
+#de{
+	text-align: center;
+
+}
+#img-div{
+	text-align: center;
+	background-color: lightgray;
+	padding: 20px;
+	margin: 10px;
+}
+#image{
+	max-width: 700px;
+	width: 100%;
+	height: auto;
+}
+
+#img-caption{
+	padding-top: 10px;
+}
+#tribute-info{
+	text-align:justify;
+	max-width: 600px;
+	width: 100%;
+	margin: auto;
+}
