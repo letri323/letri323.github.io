@@ -1,0 +1,268 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar{
+	z-index: 9999;
+	position: fixed;
+	display: flex;
+	justify-content: flex-end;
+	background:#A4A4A4;
+	width: 100%;
+	top: 0;
+	left: 0;
+	box-shadow: 2px 2px 1px black;
+}
+
+#navbar div{
+	font-weight: bold;
+	font-size: 25px;
+	padding: 20px 15px; 
+	
+}
+#navbar div a{
+	text-decoration: none;
+	color: black;
+}
+
+#navbar div:hover{
+	background: #8A0808;
+}
+
+#welcome-section{
+	background: #610B0B;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+h1{
+	text-shadow: 1px 1px 1px red;
+	font-size: 50px;
+	color:white;
+}
+#under1{
+	font-size: 25px;
+	font-style: italic;
+}
+#projects{
+	background:#210B61;}
+h2{
+	text-align: center;
+    padding-top: 100px;
+    padding-bottom: 6px;
+    font-size: 45px;
+    max-width: 700px;
+    margin: auto;
+    border-bottom: solid;
+    color:#E0F8F7;
+}
+
+#project-contener{
+	display: flex;
+	margin: 20px;
+	padding:30px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+img{
+	width: 381px;
+	height: 371px;
+}
+ .project-name{
+ 	margin-top: -3.5px;
+ 	color: white;
+ 	padding: 20px;
+ 	text-align: center;
+    background: gray;
+}
+
+.project-link{
+	padding: 20px;
+	font-style: normal;
+	text-decoration: none;
+	font-family: serif;
+}
+
+code{
+	color: white;
+	transition: 0.3s;
+}
+.project-link:hover code{
+	color: gold;
+}
+
+#button{
+	text-align:center;
+	box-sizing: border-box;
+}
+#button-link{
+	position: relative;
+	display: inline-block;
+	padding: 15px 20px;
+	margin-bottom: 50px;
+	color: #03e9f4;
+	font-size: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+	letter-spacing: 4px;
+	background: #050801;
+	overflow: hidden;
+	-webkit-box-reflect: below 0.5px linear-gradient(transparent, #0005);
+}
+
+
+#button-link:hover{
+	background: #F781F3;
+	color: 	#050801;
+	box-shadow: 0 0 5px #F781F3,
+				0 0 25px #F781F3,
+				0 0 50px #F781F3,
+				0 0 200px #F781F3;
+}
+
+#button-link .button-line{
+	position: absolute;
+	display: block;
+}
+
+#button-link .button-line:nth-child(1){
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent,#F781F3);
+	animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+	0%{
+		left: -100%;
+	}
+	50%,100%{
+		left: 100%;
+	}
+}
+#button-link .button-line:nth-child(2){
+	top: -100%;
+	right:0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent,#F781F3);
+	animation: animate2 1s linear infinite;
+	animation-delay: 0.25s;
+}
+@keyframes animate2{
+	0%{
+		top: -100%;
+	}
+	50%,100%{
+		top: 100%;
+	}
+}
+#button-link .button-line:nth-child(3){
+	bottom:0;
+	right:-100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(180deg, transparent,#F781F3);
+	animation: animate3 1s linear infinite;
+	animation-delay: 0.5s;
+}
+@keyframes animate3{
+	0%{
+		right : -100%;
+	}
+	50%,100%{
+		right: 100%;
+	}
+}
+#button-link .button-line:nth-child(4){
+	bottom: -100%;
+	left:0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent,#F781F3);
+	animation: animate4 1s linear infinite;
+	animation-delay: 0.75s;
+}
+@keyframes animate4{
+	0%{
+		bottom: -100%;
+	}
+	50%,100%{
+		bottom: 100%;
+	}
+}
+#contact{
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 90vh;
+	background: gray;
+}
+h3{
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+
+#contact p{
+	font-size: 20px;
+	font-style: italic;
+}
+#contact-icon ul{
+	margin-top: 20px;
+	padding: 30px;
+}
+#contact-icon ul li{
+	display: inline;
+	padding: 20px 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#contact-icon ul li a{
+	text-decoration: none;
+	font-size: 25px;
+}
+
+@media screen and (max-width: 600px){
+	#navbar{
+	justify-content: center;
+}
+
+#navbar div{
+	font-weight: bold;
+	font-size: 20px;
+	padding: 20px 15px; 
+	width: 33.3333333333333%;}
+	
+	#contact-icon ul{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#welcome-section h1{
+		text-align: center;
+	}
+	#project-contener{
+		padding: 0px;
+		margin: 0px 5px;
+	}
+	img{
+		max-width: 100%
+	}
+	#contact-icon ul {
+    margin-top: 20px;
+    padding: 0 10px;
+}
+	#contact h3{
+		margin: 35px;
+	}
+}
